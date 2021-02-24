@@ -42,7 +42,10 @@ h3{
   font-size: 25px;
   color: rgb(28, 95, 37);
 }
-
+td{
+    margin-top: 50px;
+  margin-bottom: 30px;
+}
 table{
     text-align: left;
 }
