@@ -1,0 +1,29 @@
+html {
+    background: lightblue url("icono.png");
+  }
+
+  body{
+    margin-top: center;
+    margin-right: center;
+    margin-left: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+table{
+  background-color: rgb(204, 245, 204);
+  border-radius: 18px;
+  margin-top: 255px;
+  margin-left:  550px;
+  margin-right: 550px;
+  width: 400px;
+ text-align: center;
+}
+
+h1{
+    background-color: rgb(18, 67, 131);
+    border-radius: 30px;
+    color : white;
+  
+}
+
+
