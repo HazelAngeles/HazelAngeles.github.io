@@ -301,4 +301,5 @@ table {
 
 #main-footer img{
 	box-shadow: 2px 2px 5px rgb(52, 49, 49);
+	max-width: 50%;
 }
