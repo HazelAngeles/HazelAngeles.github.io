@@ -1,0 +1,302 @@
+/*Estilos del cuerpo de la página*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(47, 45, 45);
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+
+/*Estilos de los titulos*/
+h1 {
+	font-size: 3.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+h3{
+    font-size: 1.3em;
+	line-height: 1.5em;
+	margin: 10px 0;
+	font-weight: 300; 
+    color:rgb(76, 66, 166);
+	position: relative;
+	text-align: center;
+     
+}
+
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+/*Estilo de la imagen*/
+img {
+	max-width: 25%;
+	height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+/*Tamaño de las lineas en la página*/
+hr{
+	width: 70%;
+}
+
+
+/*Estlos de la tabla y las celdas*/
+table {
+	width: 100%;
+	border: 2px solid rgb(177, 104, 130);
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+ th, td {
+	width: 15%;
+	text-align: center;
+	border: 1px solid rgb(177, 104, 130);
+	padding: 0.2em;
+	background-color: rgb(229, 156, 182);
+	color: rgb(47, 45, 45);
+
+ }
+
+ th {
+	background: rgb(128, 97, 136);
+	color:rgb(255, 255, 255);
+ }
+
+ /*Estilo de la sección para el contador*/
+ .count {
+	display:inline-flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+  .count h3{
+	  color: white;
+  }
+
+/*Estilo para los elementos del contador*/
+  .countdown {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+  }
+
+/*Estilo para los números del contador (días, horas, minutos y segundos*/
+  .day,
+  .hour,
+  .minute,
+  .second {
+	font-size: 2rem;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 40%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  	margin:0px auto;
+	color: rgb(177, 104, 130);
+  }
+
+/*Estilos para el tamaño, y alineación del video*/
+ .video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+ }
+
+ .video iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+ }
+
+/*Estilos para el menu desplegable*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+}
+
+.container .btn-menu{
+	float: left;
+	line-height:auto;
+}
+
+/*Estilo de la etiqueda*/
+.container .btn-menu label{
+	color: black;
+	font-size: 22px;
+	cursor: pointer;
+	position:fixed;
+}
+
+.container .menu{
+	float: right;
+	line-height: 50px;
+}
+
+/*Estilo de la lista dentro del menu*/
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: white;
+	transition: all 0.4s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+/*Sobra de la lista dentro del contenedor*/
+.container .menu a:hover{
+	border-bottom: 2px solid white;
+	padding-bottom: 5px;
+}
+
+/*Menú lateral, animacion y estilos*/
+#btn-menu{
+	display: none;
+}
+
+.container-menu{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: rgb(76, 66, 102);
+	height: 100vh;
+	position: fixed;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+
+.cont-menu nav{
+	transform: translateY(15%);
+}
+
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+	border-left: 5px solid white;
+	background: rgb(73, 67, 89);
+}
+
+.cont-menu label{
+	position: fixed;
+	right: 5px;
+	top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+/*Estilo de la cabecera*/
+.head {
+	color: white;
+	height:auto;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	max-width: 1400px;
+	background: rgb(199, 208, 237);
+	margin: auto auto;
+	border-top-left-radius: 1%;
+	border-top-right-radius: 1%;
+	background-image: url(Imagenes/fondo.png);
+	margin-top: 25px;
+}	
+
+/*Estilo del contenido de la página*/
+#main-content {
+	width: 100%;
+	max-width: 1400px;
+	height: auto;
+	background-color: white;
+	margin: 0px auto;
+	border-bottom-left-radius: 1%;
+	border-bottom-right-radius: 1%;
+}
+
+#main-content header,
+#main-content .content {
+	padding: 40px;
+}
+
+/*Estilo del pie de página asi como los iconos de redes sociales*/
+#main-footer {
+	background: rgb(177, 104, 130);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+#main-footer p {
+	margin: 0;	
+}
+	
+#main-footer table{
+	text-align: center;
+	width: 50%;
+
+}
+
+#main-footer td, th{
+	background-color: rgb(177, 104, 130);
+	border: 1px solid rgb(177, 104, 130);
+}
+
+#main-footer img{
+	box-shadow: 2px 2px 5px rgb(52, 49, 49);
+}
